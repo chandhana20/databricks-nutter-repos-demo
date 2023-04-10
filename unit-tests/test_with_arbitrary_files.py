@@ -54,6 +54,7 @@ class TestFixtureArbitraryFiles(NutterFixture):
 # COMMAND ----------
 
 result = TestFixtureArbitraryFiles().execute_tests()
+#add comment
 print(result.to_string())
 is_job = dbutils.notebook.entry_point.getDbutils().notebook().getContext().currentRunId().isDefined()
 if is_job:
